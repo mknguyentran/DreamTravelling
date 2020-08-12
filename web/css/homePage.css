@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 12, 2020, 1:14:19 PM
+    Author     : Mk
+*/
+
+.tourCard {
+    color: black;
+    text-align: left;
+    margin: auto;
+    width:500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 5px;
+}
+
+.tourInfo{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tourCard:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.tourCard.withImage{
+    background-size: cover;
+    background-position: center;
+    color: white !important;
+}
+
+.tourCard.withImage:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 12px 10px rgba(0,0,0,0.4);
+}
+
+.withImage .tourInfo{
+    background-color: rgba(0,0,0,0.6);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.withImage .tourInfo:hover{
+    background-color: rgba(0,0,0,0.4);
+}
